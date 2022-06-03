@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Página Cadastro";
+}
+
+<div class="text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Cadastro" asp-action="Criar" >Adicionar nova Despesa</a>
+    </div>
+
+    <h1 class="display-4">Listagem de Despesas</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Data</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Forma de pagamento</th>
+                <th scope="col">Numero de Parcelas</th>
+                <th scope="col">Paga</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>mdo</td>
+                <td>teste</td>
+                <td>mdo</td>
+                <td>mdo</td>
+                <td>teste</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a type="button" class="btn btn-primary" asp-controller="Cadastro" asp-action="Editar" >Editar</a>
+                        <a type="button" class="btn btn btn-danger btn-sm-" asp-controller="Cadastro" asp-action="ConfirmacaoExcluir" >Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>fat</td>
+                <td>Thornton</td>
+                <td>fat</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+

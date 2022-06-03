@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Editar Despesa";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editar Despesa</h1>
+</div>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="Valor">Valor</label>
+            <input type="number" class="form-control" id="inputEmail4" placeholder="Valor">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="Data">Data</label>
+            <input type="date" class="form-control" id="inputPassword4" placeholder="Data">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="Descrição">Descrição</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Descriçãp">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="Categoria">Categoria</label>
+            <select id="inputState" class="form-control">
+                <option selected>Selecione</option>
+                <option>Casa</option>
+                <option>Cas</option>
+                <option>Ca</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="FormaDePagamento">Forma de Pagamento</label>
+            <select id="inputState" class="form-control">
+                <option selected>Selecione</option>
+                <option>Cartão de Crédito</option>
+                <option>Cartão de Débito</option>
+                <option>Dinheiro</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="NumeroDeParcelas">Número de Parcelas</label>
+            <select id="inputState" class="form-control">
+                <option selected>Selecione</option>
+                <option>1 Parcela</option>
+                <option>2 Parcelas</option>
+                <option>3 Parcelas</option>
+                <option>4 Parcelas</option>
+                <option>5 Parcelas</option>
+                <option>6 Parcelas</option>
+                <option>7 Parcelas</option>
+                <option>8 Parcelas</option>
+                <option>9 Parcelas</option>
+                <option>10 Parcelas</option>
+                <option>11 Parcelas</option>
+                <option>12 Parcelas</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="PagamentoRealizado">Pagamento Realizado</label>
+            <select id="inputState" class="form-control">
+                <option selected>Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Atualizar</button>
+    <button type="submit" class="btn btn-secondary btn-block" asp-controller="Cadastro" asp-action="Index" role="button">Voltar</button>
+</form>

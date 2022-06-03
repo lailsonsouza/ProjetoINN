@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Confirmação para excluir Despesa";
+}
+
+<div class="text-center">
+    <h3>
+        Realmente desja apagar o despesa (_nome da despesa)?
+    </h3>
+</div>
+
+<a class="btn btn-primary btn-block" role="button" asp-controller="Cadastro" asp-action="Index">Cancelar Exclusão</a>
+<a class="btn btn-danger btn-block" role="button" asp-controller="Cadastro" asp-action="Apagar">Confirmar Exclusão</a>
